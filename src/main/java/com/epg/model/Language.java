@@ -1,7 +1,7 @@
 package com.epg.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -9,6 +9,11 @@ import java.util.List;
 @Data
 @Entity
 @Table(name="languages")
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+
 public class Language {
 
     @Id

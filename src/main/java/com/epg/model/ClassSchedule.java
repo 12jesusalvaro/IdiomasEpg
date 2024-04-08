@@ -1,7 +1,7 @@
 package com.epg.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -10,6 +10,10 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "class_schedules")
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class ClassSchedule {
 
     @Id
